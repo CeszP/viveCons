@@ -1,10 +1,16 @@
 const  gulp = require('gulp'),
 	   post= require('gulp-postcss'),
-	   responsiveFont = require('postcss-responsive-font');
+	   responsiveFont = require('postcss-responsive-font')
+	   simpleVars = require('postcss-simple-vars'),
+	   nested = require ('postcss-nested'),
+	   grid = require ('postcss-grid');
 
 
 let postCssPlugins = [
-	responsiveFont
+	responsiveFont,
+	simpleVars,
+	nested,
+	grid
 ];
 
 gulp.task ('styles', () =>
