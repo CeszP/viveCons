@@ -9,5 +9,6 @@
 	<?php 
 		include ("nav.php");
 	 ?>
+	 Hola
 </body>
 </html>
