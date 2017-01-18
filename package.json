@@ -1,0 +1,26 @@
+{
+  "name": "vivecons",
+  "version": "1.0.0",
+  "description": "Sitio Vive Constructora",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CeszP/viveCons.git"
+  },
+  "author": "CeszP",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CeszP/viveCons/issues"
+  },
+  "homepage": "https://github.com/CeszP/viveCons#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.3.0",
+    "postcss-grid": "^2.0.0",
+    "postcss-nested": "^1.0.0",
+    "postcss-simple-vars": "^3.0.0"
+  }
+}
