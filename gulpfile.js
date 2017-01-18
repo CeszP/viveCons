@@ -3,14 +3,16 @@ const  gulp = require('gulp'),
 	   responsiveFont = require('postcss-responsive-font')
 	   simpleVars = require('postcss-simple-vars'),
 	   nested = require ('postcss-nested'),
-	   grid = require ('postcss-grid');
+	   grid = require ('postcss-grid'),
+	   cm = require("postcss-custom-media");
 
 
 let postCssPlugins = [
 	responsiveFont,
 	simpleVars,
 	nested,
-	grid
+	grid,
+	cm
 ];
 
 gulp.task ('styles', () =>

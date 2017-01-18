@@ -1,25 +1,51 @@
-$colorh2: #046FC9;
-$colorh1: #212A34;
-$rojillo: #F22B2B;
+$naranja: #FF4700;
+$naranjaClaro: #FC6A35;
+@font-face {
+    font-family: "anita";
+    src: url(../fonts/anita/anita.ttf) format("truetype");
+}
+/* Clearfix */
+.clear:before, .clear:after {
+    content: " ";
+    display: table;
+}
+ 
+.clear:after {
+    clear: both;
+}
+ 
+.clear {
+    *zoom: 1;
+}
+
+/*NAV*/
+
+a#pull {
+    display: none;
+}
 #nv{ 
-	background-color: $colorh1;
+	background-color: $naranja;
+    font-family: anita;
     list-style-type: none;
     margin: 0;
     overflow: hidden;
     padding: 0;
     margin-top: 0px;
     color: white;
+    font-size: 100%;
     li {
     	float: left;
     a {
+        font-size-responsive: 12px 17px 480px 1280px;
         color: white;
         display: block;
-        padding: 15px 16px;
+        padding: 17px 16px;
         text-align: center;
         text-decoration: none;
+
     }
     a:hover {
-        background-color: $colorh2;
+        background-color: $naranjaClaro;
     }
     a:active {
         background-color: #B2BBBB;
@@ -32,36 +58,18 @@ $rojillo: #F22B2B;
     }
 }
 }
-#repTxt{
-	float: right;
-	ffont-size-responsive: 8px 14px 480px 1280px;
-	margin-top: 1%;
-	margin-right: 1%;
-}
 #name{
 	padding-right: 0 !important;
 	:hover{
-		background-color: $colorh1 !important;
+		background-color: $naranja !important;
 	}
 	a{	
-		padding: 10% 30% 10% 20% !important;
+        background-color: $naranjaClaro;
+		padding: 10% 20% 10% 10% !important;
 		img{
 			width: 90%;
 		}	
 	}
-}
-button{
-	border-radius: 200px 200px 200px 200px;
-	-moz-border-radius: 200px 200px 200px 200px;
-	-webkit-border-radius: 200px 200px 200px 200px;
-	padding: 0;	
-	border: 0px solid #212A34;
-	background-color: #212A34;
-	margin-top: 3%;
-
-}
-.btnRep:hover{
-	cursor: pointer;
 }
 .fixed-nav-bar {
   position: fixed;
@@ -69,4 +77,69 @@ button{
   left: 0;
   z-index: 9999;
   width: 100%;
+}
+
+/*BODY*/
+#logo{
+    margin-top: 4%;
+    text-align: center;
+    img{
+        width: 45%;
+    }
+}
+
+/*RESPONSIVE*/
+/*NAV*/
+@custom-media --small-viewport only screen and (max-width : 600px);
+
+@media (--small-viewport) {
+    #logo{
+        margin-top: 7%;
+    }
+   #name{
+    display: none;
+   }
+   nav {
+    font-family: anita;
+        border-bottom: 0;
+    }
+ 
+    nav ul {
+        display: none;
+        width: 100%;
+    }
+ 
+    nav li {
+        width: 50%;
+        float: left;
+        position: relative;
+    }
+ 
+    nav a {
+        text-decoration: none;
+        color: white;
+        text-align: left;
+        width: 80%;
+        text-indent: 25px;
+        padding: 2% 0;
+    }
+ 
+    nav a#pull {
+        content: "";
+        display: block;
+        background-color: $naranja;
+        width: 100%;
+        position: relative;
+    }
+    nav a#pull:after {
+        content:"";
+        background: url('../img/navicon.png') no-repeat;
+        background-size: contain;
+        width: 7%;
+        height: 80%;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
 }
