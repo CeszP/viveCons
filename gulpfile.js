@@ -6,7 +6,6 @@ const  gulp = require('gulp'),
 	   grid = require ('postcss-grid'),
 	   cm = require("postcss-custom-media");
 
-
 let postCssPlugins = [
 	responsiveFont,
 	simpleVars,

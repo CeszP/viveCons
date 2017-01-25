@@ -28,7 +28,7 @@ a#pull {
     display: none;
 }
 #nv{ 
-	background-color: $naranja;
+    background-color: $naranja;
     font-family: walkway;
     list-style-type: none;
     margin: 0;
@@ -38,7 +38,7 @@ a#pull {
     color: white;
     font-size: 100%;
     li {
-    	float: left;
+        float: left;
         text-align: center;
         a {
             font-size-responsive: 12px 20px 480px 1280px;
@@ -64,14 +64,14 @@ a#pull {
     }
 }
 #name{
-	padding-right: 0 !important;
+    padding-right: 0 !important;
     margin-right: 1%;
-	:hover{
-    		background-color: $naranja !important;
-	}
-	img{
-			width: 90%;
-	}
+    :hover{
+            background-color: $naranja !important;
+    }
+    img{
+            width: 90%;
+    }
        
     
 }

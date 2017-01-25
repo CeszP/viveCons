@@ -136,5 +136,12 @@ ss.add($items);
 <?php 
 	include('footer.html');
  ?>
+	<title>Vive Constructora</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<?php 
+		include ("nav.php");
+	 ?>
 </body>
 </html>
