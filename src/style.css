@@ -8,6 +8,7 @@ $naranjaClaro: #FC6A35;
     font-family: "cdb";
     src: url(../fonts/caviar_dreams/CDB.ttf) format("truetype");
 }
+
 /* Clearfix */
 .clear:before, .clear:after {
     content: " ";
@@ -143,7 +144,7 @@ body{
 .col{
     color: #454546;
     font-size-responsive: 13px 17px 480px 1280px;
-    font-family: walkway;
+    font-family: cdb;
     text-align: justify;
     grid-column: 5/12;
     margin-left: 6%;

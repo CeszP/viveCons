@@ -6,6 +6,7 @@
     font-family: "cdb";
     src: url(../fonts/caviar_dreams/CDB.ttf) format("truetype");
 }
+
 /* Clearfix */
 .clear:before, .clear:after {
     content: " ";
@@ -161,7 +162,7 @@ body{
 }
 .col{
     color: #454546;
-    font-family: walkway;
+    font-family: cdb;
     text-align: justify;
     margin-left: 6%;
     font-size: 13px;
