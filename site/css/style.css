@@ -141,7 +141,7 @@ body{
 }
 .des_title{
     color: #454545;
-    font-family: cdb;
+    font-family: walkway;
     text-align: center;
     margin-left: 6%;
     font-size: 20px;
@@ -161,7 +161,7 @@ body{
 }
 .col{
     color: #454546;
-    font-family: cdb;
+    font-family: walkway;
     text-align: justify;
     margin-left: 6%;
     font-size: 13px;
@@ -227,6 +227,7 @@ button{
 }
 /*FOOTER*/
 #foot{
+    margin-top: 5%;
     background-color: #FF4700;
     float: left;
     width: 100%;
