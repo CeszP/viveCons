@@ -45,7 +45,7 @@ a#pull {
 #nv li a {
     color: white;
     display: block;
-    padding: 17px 16px;
+    padding: 14px 16px;
     text-align: center;
     text-decoration: none;
 }
@@ -74,8 +74,6 @@ a#pull {
 #name{
     padding-right: 0 !important;
     margin-right: 1%;
-       
-    
 }
 #name :hover{
     background-color: #FF4700 !important;
@@ -196,65 +194,55 @@ hr{
 }
 
 /*SLIDER*/
-.contenedor{
-    width:90%;
-    text-align: center;
-    margin: 0 auto;
-    position: relative;
-}
-.contenedor div{
-    width: 100%;
-    display: none;
-}
-.contenedor img{
-    width: 100%;
-    height: 100%;
-    margin-top: 0;
-}
-button{
-    margin:0 auto;
-    border: none;
-    background: white;
-}
+#carouselHacked{
 
-.anterior,.siguiente{
-    cursor: pointer;
-    width: 20%; 
-}
-
-.anterior img,.siguiente img{
-    width: 15%;
-    height: 15%;
+    margin-top: 4%;
 }
 /*FOOTER*/
 #foot{
     margin-top: 5%;
     background-color: #FF4700;
+    font-size: 13px;
     float: left;
     width: 100%;
     margin-right: 2.08333%;
 }
 #foot div ul{
     list-style: none;
-    display: inline-block;
+    overflow: hidden;
+    margin-top: 1%;
+}
+#foot div ul li{
+    float: left;
+    margin-left: 7.9%;
 }
 #foot div ul li a{
     color: white;
     font-family: walkway;
     text-decoration: none;
+    display: block;
 }
-#cont{
-    float: left;
+@media (min-width:480px) {
+    #foot {
+        font-size: 19px;
+    }
+}
+@media (min-width:480px) and (max-width:1280px) {
+    #foot {
+        font-size: calc(13px + (19 - 13) * ( (100vw - 480px) / ( 1280 - 480)));
+    }
+}
+/*.social_container{
+    width: 70%;
+    text-align: center;
+    margin-left: 2%;
 }
 .social{
-    
     display: inline-block;
-    width: 4%;
+    width: 5%;
     padding: 2% 0;
-    margin: 8% 1.5% 0 1.5% !important;
     text-indent: -9999px;
-    float: right;
-
+    margin-left: 30%;
 }
 .fb{
    
@@ -273,32 +261,28 @@ button{
     background: url(../img/tw_gray.png);
     background-repeat: no-repeat;
     background-size: contain;
-    margin-top: 1.9%;
+    margin-top: 2.4%;
 }
 .tw:hover{
     
     background: url(../img/tw_color.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    margin-top: 7.7% !important;
+    
 }
-.footer_links{
-    margin: 10% 15% 0 2%;
-    font-size: 13px;
-}
-@media (min-width:480px) {
-    .footer_links {
-        font-size: 19px;
-    }
-}
-@media (min-width:480px) and (max-width:1280px) {
-    .footer_links {
-        font-size: calc(13px + (19 - 13) * ( (100vw - 480px) / ( 1280 - 480)));
-    }
-}
+*/
 #hidden{
    visibility: hidden; 
 }
+#footer_hr{
+    margin-top: -2.2%;
+    border:0;
+    height: 1.5px;
+    background-color: white;
+    margin-left: 11%;
+    width: 78%;
+}
+
 /*RESPONSIVE*/
 /*NAV*/
 
@@ -325,7 +309,7 @@ button{
         text-decoration: none;
         color: white;
         text-align: left;
-        width: 80%;
+        width: 90%;
         text-indent: 25px;
         padding: 2% 0;
     }
@@ -348,6 +332,11 @@ button{
         position: absolute;
         right: 15px;
         top: 10px;
+
+    }
+    nav a#pull:hover{
+        text-decoration: none;
+        color: white;
     }
     /* NONE Effect 1: Brackets */
    .cl-effect-1 a::before {

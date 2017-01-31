@@ -9,7 +9,8 @@
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/animate.css">
 	<script src="../js/jquery-3.1.1.min.js" type="text/javascript"></script>
-	
+	<link rel='stylesheet prefetch' href='../css/bootstrap.css'>
+	<link rel="stylesheet" href="../css/style_slider.css">
 	<script>
 		$(function() {
     		var pull = $('#pull');
@@ -29,7 +30,19 @@
     		}
 		});
 	</script>
-	
+	<script>
+		var lastPositionScrollTop = 0;
+ 
+		$(window).scroll(function () {
+    		var position = $(this).scrollTop();
+    		if (position < lastPositionScrollTop){
+        		$('#bar ').fadeIn("slow");
+    		} else {
+        		$('#bar ').fadeOut("slow");
+   		 }
+    	lastPositionScrollTop = position;
+		});
+	</script>
 </head>
 <body>
 	<?php 
@@ -132,16 +145,10 @@ var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizo
 ss.add($items);
 
 */
+});
 </script>
 <?php 
 	include('footer.html');
  ?>
-	<title>Vive Constructora</title>
-	<link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-	<?php 
-		include ("nav.php");
-	 ?>
 </body>
 </html>
