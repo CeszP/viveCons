@@ -16,7 +16,7 @@ $naranjaClaro: #FC6A35;
 }
  
 .clear:after {
-    clear: both;
+    clear: both !important;
 }
  
 .clear {
@@ -120,11 +120,12 @@ a#pull {
 /*BODY*/
 body{
     margin: 0;
+    overflow-x: hidden;
 }
 #slider{
     margin-top: 4%;
 }
-#logo{
+.logo{
     margin-top: 3%;
     text-align: center;
     img{
@@ -161,7 +162,34 @@ hr{
     width: 60%;
     float: left;
 }
+.row{
+    margin-top: 4%;
+}
+.sec_title{
+    color: #454545;
+    font-family: walkway;
+    font-size-responsive: 20px 40px 480px 1280px;
+}
+.sec_img{
+    padding: 0;
+    width: 100%;
+    margin: 0 !important;
+}
+.sec_par{
+    font-family: walkway !important;
+    text-align: justify !important;
+    font-size-responsive: 16px 26px 480px 1280px !important;
+}
 
+.sec_body_marg{
+    margin: 0 1%;
+}
+.serv_titles{
+    color: #454545;
+    font-family: walkway;
+    font-size-responsive: 20px 30px 480px 1280px;
+    text-align: left;
+}
 /*SLIDER*/
 #carouselHacked{
 
@@ -247,7 +275,7 @@ hr{
 @custom-media --small-viewport only screen and (max-width : 600px);
 
 @media (--small-viewport) {
-#logo{
+.logo{
         margin-top: 7%;
 }
    #name{

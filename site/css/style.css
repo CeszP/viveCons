@@ -14,7 +14,7 @@
 }
  
 .clear:after {
-    clear: both;
+    clear: both !important;
 }
  
 .clear {
@@ -127,15 +127,16 @@ a#pull {
 /*BODY*/
 body{
     margin: 0;
+    overflow-x: hidden;
 }
 #slider{
     margin-top: 4%;
 }
-#logo{
+.logo{
     margin-top: 3%;
     text-align: center;
 }
-#logo img{
+.logo img{
     width: 45%;
 }
 .des_title{
@@ -192,7 +193,64 @@ hr{
     width: 60%;
     float: left;
 }
+.row{
+    margin-top: 4%;
+}
+.sec_title{
+    color: #454545;
+    font-family: walkway;
+    font-size: 20px;
+}
+@media (min-width:480px) {
+    .sec_title {
+        font-size: 40px;
+    }
+}
+@media (min-width:480px) and (max-width:1280px) {
+    .sec_title {
+        font-size: calc(20px + (40 - 20) * ( (100vw - 480px) / ( 1280 - 480)));
+    }
+}
+.sec_img{
+    padding: 0;
+    width: 100%;
+    margin: 0 !important;
+}
+.sec_par{
+    font-family: walkway !important;
+    text-align: justify !important;
+    font-size: 16px;
+}
+@media (min-width:480px) {
+    .sec_par {
+        font-size: 26px;
+    }
+}
+@media (min-width:480px) and (max-width:1280px) {
+    .sec_par {
+        font-size: calc(16px + (26 - 16) * ( (100vw - 480px) / ( 1280 - 480)));
+    }
+}
 
+.sec_body_marg{
+    margin: 0 1%;
+}
+.serv_titles{
+    color: #454545;
+    font-family: walkway;
+    text-align: left;
+    font-size: 20px;
+}
+@media (min-width:480px) {
+    .serv_titles {
+        font-size: 30px;
+    }
+}
+@media (min-width:480px) and (max-width:1280px) {
+    .serv_titles {
+        font-size: calc(20px + (30 - 20) * ( (100vw - 480px) / ( 1280 - 480)));
+    }
+}
 /*SLIDER*/
 #carouselHacked{
 
@@ -287,7 +345,7 @@ hr{
 /*NAV*/
 
 @media only screen and (max-width : 600px) {
-#logo{
+.logo{
         margin-top: 7%;
 }
    #name{

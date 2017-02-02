@@ -1,55 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<title>Vive Grupo Constructor</title>
-	
-	<link type="image/x-icon" href="../img/logo_alone.png" rel="icon" /> 
-	<link rel="stylesheet" href="../css/style.css">
-	<link rel="stylesheet" href="../css/animate.css">
-	<script src="../js/jquery-3.1.1.min.js" type="text/javascript"></script>
-	<link rel='stylesheet prefetch' href='../css/bootstrap.css'>
-	<link rel="stylesheet" href="../css/style_slider.css">
-	<script>
-		$(function() {
-    		var pull = $('#pull');
-    		menu = $('nav ul');
-    		menuHeight = menu.height();
- 
-    		$(pull).on('click', function(e) {
-        		e.preventDefault();
-        		menu.slideToggle();
-    		});
-		});
- 
-		$(window).resize(function(){
-    		var w = $(window).width();
-    		if(w > 320 && menu.is(':hidden')) {
-        		menu.removeAttr('style');
-    		}
-		});
-	</script>
-	<script>
-		var lastPositionScrollTop = 0;
- 
-		$(window).scroll(function () {
-    		var position = $(this).scrollTop();
-    		if (position < lastPositionScrollTop){
-        		$('#bar ').fadeIn("slow");
-    		} else {
-        		$('#bar ').fadeOut("slow");
-   		 }
-    	lastPositionScrollTop = position;
-		});
-	</script>
+	<?php 
+		include("head.html");
+	 ?>
 </head>
 <body>
 	<?php 
 		include ("nav.html");
 		include ("slider.html");
 	 ?>
-	<div id="logo">
+	<div class="logo">
 		<img src="../img/logo.jpg" alt="">
 	</div>
 	<div>
