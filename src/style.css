@@ -16,7 +16,7 @@ $naranjaClaro: #FC6A35;
 }
  
 .clear:after {
-    clear: both;
+    clear: both !important;
 }
  
 .clear {
@@ -120,21 +120,28 @@ a#pull {
 /*BODY*/
 body{
     margin: 0;
+    overflow-x: hidden;
 }
 #slider{
     margin-top: 4%;
 }
-#logo{
-    margin-top: 3%;
+.logo{
+    margin-top: 1%;
     text-align: center;
     img{
         width: 45%;
     }
 }
+.logo_grid{
+    text-align: center;
+    img{
+        width: 100%;
+    }
+}
 .des_title{
     color: #454545;
     font-family: walkway;
-    font-size-responsive: 20px 25px 480px 1280px;
+    font-size-responsive: 20px 28px 480px 1280px;
     grid-column: 5/12;
     text-align: center;
     margin-left: 6%;
@@ -161,12 +168,59 @@ hr{
     width: 60%;
     float: left;
 }
-
-/*SLIDER*/
-#carouselHacked{
-
+.row{
     margin-top: 4%;
 }
+.sec_title{
+    color: #454545;
+    font-family: walkway;
+    font-size-responsive: 20px 40px 480px 1280px;
+}
+.sec_img{
+    padding: 0;
+    width: 100%;
+    margin: 0 !important;
+}
+.sec_par{
+    font-family: walkway !important;
+    text-align: justify !important;
+    font-size-responsive: 16px 26px 480px 1280px !important;
+}
+
+.sec_body_marg{
+    margin: 0 1%;
+}
+.serv_titles{
+    color: #454545;
+    font-family: walkway;
+    font-size-responsive: 20px 30px 480px 1280px;
+    text-align: left;
+}
+/*GRID index*/
+.info p{
+    font-size-responsive: 9px 15px 480px 1280px !important;
+}
+.info h3{
+    font-size-responsive: 12px 17px 480px 1280px !important;
+}
+.row{
+    margin: 0 !important;
+}
+.first{
+    margin-top: 5% !important;
+}
+.second{
+    margin-top: 1% !important;
+}
+/*Slider*/
+#slider_cont{
+    margin-top: 3.4%;
+    img{
+        width: 100%;
+        max-height: 595px;
+    }
+}
+
 /*FOOTER*/
 #foot{
     margin-top: 5%;
@@ -247,7 +301,10 @@ hr{
 @custom-media --small-viewport only screen and (max-width : 600px);
 
 @media (--small-viewport) {
-#logo{
+.logo_grid{
+    display: none;
+}
+.logo{
         margin-top: 7%;
 }
    #name{
